@@ -16,8 +16,7 @@ Open `index.html` in a browser to preview locally. The appointment page lives at
 - Little Silver office: 200 White Rd, Suite 110, Little Silver, NJ 07739
 - Phone: 732-530-7229
 - Email: drmariannappi@gmail.com
-- NJ license: 38MC00756800
-- Individual NPI: 1295248177
-- Organization NPI: 1982310280
+- Active New Jersey chiropractic licensure
+- Registered chiropractic provider
 
 The hero image is AI-generated for the site and is not a photo of the actual office.
