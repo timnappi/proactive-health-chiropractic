@@ -693,7 +693,8 @@ h3 {
   margin-top: 2rem;
 }
 
-.contact-list a {
+.contact-list a,
+.contact-item {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
