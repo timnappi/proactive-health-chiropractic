@@ -15,6 +15,7 @@ Open `index.html` in a browser to preview locally. The appointment page lives at
 - Palmer College of Chiropractic - Davenport, 2017
 - Little Silver office: 200 White Rd, Suite 110, Little Silver, NJ 07739
 - Phone: 732-530-7229
+- Email: drmariannappi@gmail.com
 - NJ license: 38MC00756800
 - Individual NPI: 1295248177
 - Organization NPI: 1982310280
