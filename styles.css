@@ -115,16 +115,14 @@ svg {
   min-width: 0;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  flex: 0 0 42px;
-  border: 1px solid currentColor;
+.brand-logo {
+  width: 54px;
+  height: 54px;
+  flex: 0 0 54px;
   border-radius: 50%;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.25rem;
+  object-fit: cover;
+  object-position: center 32%;
+  box-shadow: 0 8px 24px rgba(18, 35, 31, 0.18);
 }
 
 .brand strong,
@@ -1311,10 +1309,10 @@ textarea {
     font-size: 0.92rem;
   }
 
-  .brand-mark {
-    width: 38px;
-    height: 38px;
-    flex-basis: 38px;
+  .brand-logo {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
   }
 
   h1 {
