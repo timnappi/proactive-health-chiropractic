@@ -159,6 +159,19 @@ svg {
   opacity: 1;
 }
 
+.text-link {
+  color: var(--deep);
+  font-weight: 850;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.25em;
+}
+
+.text-link:hover,
+.text-link:focus-visible {
+  color: var(--gold);
+}
+
 .nav-call {
   display: inline-flex;
   align-items: center;
@@ -1044,6 +1057,160 @@ textarea {
   color: var(--muted);
 }
 
+.bio-hero {
+  padding: clamp(8rem, 13vw, 10rem) clamp(1rem, 5vw, 5rem) clamp(3.5rem, 7vw, 6rem);
+  background:
+    linear-gradient(135deg, rgba(246, 243, 237, 0.95), rgba(255, 253, 248, 0.98)),
+    radial-gradient(circle at 88% 18%, rgba(191, 143, 70, 0.16), transparent 34%);
+}
+
+.bio-hero-layout,
+.bio-story-grid,
+.bio-values,
+.bio-gallery,
+.bio-note {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+}
+
+.bio-hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(320px, 0.52fr);
+  gap: clamp(2rem, 6vw, 4rem);
+  align-items: center;
+}
+
+.bio-hero h1 {
+  max-width: 820px;
+  margin-bottom: 1.1rem;
+  font-size: clamp(3.2rem, 7.4vw, 6.6rem);
+}
+
+.bio-hero p,
+.bio-story-copy p,
+.bio-values p,
+.bio-photo-section p,
+.bio-gallery figcaption,
+.bio-note p {
+  color: var(--muted);
+}
+
+.bio-hero p {
+  max-width: 690px;
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+}
+
+.bio-portrait {
+  margin: 0;
+}
+
+.bio-portrait img {
+  width: 100%;
+  aspect-ratio: 0.82;
+  object-fit: cover;
+  object-position: center top;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 22px 64px rgba(18, 35, 31, 0.16);
+}
+
+.bio-story {
+  background: var(--paper);
+}
+
+.bio-story-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: start;
+}
+
+.bio-story-grid h2 {
+  max-width: 700px;
+  font-size: clamp(2.25rem, 4.8vw, 4.15rem);
+}
+
+.bio-story-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.bio-values {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: clamp(2rem, 5vw, 3.5rem);
+}
+
+.bio-values article,
+.bio-gallery figure {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: white;
+  box-shadow: 0 16px 48px rgba(18, 35, 31, 0.08);
+}
+
+.bio-values article {
+  padding: 1.25rem;
+}
+
+.bio-values span {
+  display: inline-block;
+  margin-bottom: 1.15rem;
+  color: var(--gold);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.9rem;
+}
+
+.bio-photo-section {
+  background: var(--mist);
+}
+
+.bio-gallery {
+  display: grid;
+  grid-template-columns: 0.82fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.bio-gallery figure {
+  overflow: hidden;
+  margin: 0;
+}
+
+.bio-gallery img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.bio-gallery figure:first-child img {
+  object-position: center 30%;
+}
+
+.bio-gallery figcaption {
+  padding: 1rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.bio-note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 2rem);
+}
+
+.bio-note h2 {
+  max-width: 660px;
+  margin-bottom: 0.6rem;
+  font-size: clamp(2rem, 4vw, 3.25rem);
+}
+
+.bio-note p {
+  max-width: 720px;
+  margin-bottom: 0;
+}
+
 .lifewave-hero {
   min-height: 760px;
   display: grid;
@@ -1269,6 +1436,9 @@ textarea {
   .visit-content,
   .booking-shell,
   .process-steps,
+  .bio-hero-layout,
+  .bio-values,
+  .bio-gallery,
   .lifewave-feature,
   .lifewave-hero,
   .product-grid {
@@ -1285,7 +1455,8 @@ textarea {
 
   .patch-pillars,
   .lifewave-cta,
-  .method-note {
+  .method-note,
+  .bio-story-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1296,6 +1467,14 @@ textarea {
   .intro-grid,
   .section-heading {
     grid-template-columns: 1fr;
+  }
+
+  .bio-note {
+    display: block;
+  }
+
+  .bio-note .button {
+    margin-top: 1.5rem;
   }
 }
 
@@ -1338,12 +1517,24 @@ textarea {
   .booking-shell,
   .booking-grid,
   .process-steps,
+  .bio-hero-layout,
+  .bio-story-grid,
+  .bio-values,
+  .bio-gallery,
   .lifewave-feature,
   .lifewave-hero,
   .patch-pillars,
   .product-grid,
   .lifewave-cta {
     grid-template-columns: 1fr;
+  }
+
+  .bio-hero {
+    padding-top: 7rem;
+  }
+
+  .bio-gallery img {
+    height: 280px;
   }
 
   .lifewave-product-stack {
