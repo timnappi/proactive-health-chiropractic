@@ -108,6 +108,10 @@ svg {
   backdrop-filter: blur(14px);
 }
 
+.bio-page .site-header {
+  color: var(--deep);
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
