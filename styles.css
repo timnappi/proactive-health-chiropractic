@@ -336,8 +336,8 @@ h1 {
   position: absolute;
   right: clamp(1rem, 4vw, 4rem);
   bottom: clamp(1rem, 5vw, 4rem);
-  width: min(300px, calc(100% - 2rem));
-  padding: 1.2rem;
+  width: min(360px, calc(100% - 2rem));
+  padding: clamp(1.15rem, 2vw, 1.45rem);
   background: rgba(255, 253, 248, 0.92);
   color: var(--deep);
   border: 1px solid rgba(255, 255, 255, 0.65);
@@ -351,12 +351,22 @@ h1 {
   color: var(--muted);
 }
 
+.hero-panel > span:first-child {
+  margin-bottom: 0.35rem;
+}
+
 .hero-panel strong {
   display: block;
-  margin: 0.2rem 0;
+  margin: 0 0 0.25rem;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.4rem;
-  line-height: 1.1;
+  font-size: clamp(1.6rem, 2vw, 1.9rem);
+  line-height: 1.08;
+}
+
+.hero-panel-role {
+  margin-bottom: 0.25rem;
+  color: var(--deep);
+  font-weight: 800;
 }
 
 .trust-band {
@@ -1438,6 +1448,7 @@ textarea {
   .hero-panel {
     left: 1rem;
     right: 1rem;
+    width: auto;
   }
 
   .trust-band,
@@ -1666,6 +1677,10 @@ textarea {
 
   .hero-panel {
     padding: 1rem;
+  }
+
+  .hero-panel strong {
+    font-size: 1.45rem;
   }
 
   .section {
