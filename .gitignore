@@ -2,3 +2,7 @@
 server.err.log
 server.out.log
 ProactiveHealthChiropracticWebsite/
+.publish-proactive-health/
+.tmp-*/
+.tmp-ios-preview.html
+assets/ios-*.png

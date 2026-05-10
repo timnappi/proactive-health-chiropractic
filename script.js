@@ -23,7 +23,9 @@ nav?.addEventListener("click", (event) => {
   }
 });
 
-year.textContent = new Date().getFullYear();
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
 
 appointmentForm?.addEventListener("submit", (event) => {
   event.preventDefault();
